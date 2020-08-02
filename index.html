@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./ownstyle.css">
+</head>
+
+<body class="bg-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-secondary p-5 text-light text-center mb-5">
+                <h1>
+                    Password Generator
+                </h1>
+            </div>
+            </div>
+            
+            <div class="card bg-secondary text-light">
+                <div class="card-header text-center">
+                    <h2>Generate a Password</h2>
+                </div>
+
+                <div class="card-body">
+                    <textarea readonly id="password"
+                    placeholder="Your Secure Password"
+                    aria-label="Generated Password">
+                    </textarea>
+                </div>
+
+                <div class="card-footer text-light text-center">
+                    <a href="#" id="generate" class="btn btn-primary">
+                        Generate Password
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    <footer class="page-footer fixed-bottom font-small bg-dark mt-3">
+        <div class="footer copyright text-center text-primary">
+            © 2020 Rojas Creation <br> 
+            <a href="http://www.facebook.com/sfcarz" class="color-primary">Facebook</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
