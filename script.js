@@ -17,7 +17,6 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
-  console.log(password);
 }
 
 function generatePassword() {
@@ -59,6 +58,7 @@ function generatePassword() {
   } else {
     alert("You must enter a number between 8 and 128");
   }
+  return(passWord)
 }
 
 generateBtn.addEventListener("click", writePassword);
