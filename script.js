@@ -17,6 +17,7 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
+  console.log(password);
 }
 
 function generatePassword() {
@@ -27,8 +28,6 @@ function generatePassword() {
   var length = prompt(
     "How long do you want your password? Must be between 8 to 128 characters long"
   );
-
-  console.log(parseInt(length) > 8);
 
   if (parseInt(length) > 8 && parseInt(length) < 128) {
     var isLowerCase = confirm("Do you want to include lowercase?");
