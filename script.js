@@ -56,14 +56,9 @@ function generatePassword() {
       randomize += characters[Math.floor(characters.length * Math.random())];
       passWord = randomize;
     }
-
-    console.log(randomize);
-    console.log(passWord);
-    console.log(generatePassword);
   } else {
     alert("You must enter a number between 8 and 128");
   }
-  return(passWord)
 }
 
 generateBtn.addEventListener("click", writePassword);
